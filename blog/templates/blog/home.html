@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+  <title>Blogtech</title>
+  <style>
+    body{
+      background-color: rgb(255, 194, 194);
+    }
+    .conta {
+
+      display: block;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 50px;
+      text-align: center;
+      background-color: rgb(240, 108, 108);
+      margin-top: 0px;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      align-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding-bottom: 0px;
+
+
+    }
+
+    .conta h1 {
+
+      /* border: 2px solid red; */
+      display: inline-flex;
+      height: 60px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 50px;
+      animation: typing 1s steps(8);
+      overflow: hidden;
+      word-wrap: none;
+      border-right: 4px solid black;
+      width: 8ch;
+      padding-top: 00px;
+      color: white;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0ch;
+      }
+
+      100% {
+        width: 8ch;
+
+      }
+    }
+
+    .conta img {
+      /* border: 2px solid red; */
+      /* display: inline-flex; */
+      height: 83px;
+      width: 50px;
+      display: inline-block;
+      filter: invert(1);
+      margin-top: 0px;
+      padding-bottom: 42px;
+
+
+    }
+
+    #heading {
+      text-align: center;
+      display: inline-block;
+    }
+
+    .corosal {
+      height: 200px;
+      width: 1512px;
+      margin-left: 2px;
+      
+      margin-right: 5px;
+      margin-top: 0px;
+    }
+
+    
+
+    /* .blogcard {
+      margin-top: 10px;
+      display: inline-flex;
+      align-content: center;
+      width: 90%;
+      text-align: center;
+      margin-left: 36px;
+
+    } */
+
+    .card {
+      display: inline-flex;
+
+      margin-top: 5px;
+      width: 750px;
+      height: 250px;
+      border: 5px solid black;
+      border-radius: 20px;
+      margin-left: 4px;
+      margin-right: 6px;
+      padding: 0px;
+      text-align: left;
+      color: green;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #logo {
+      display: inline-block;
+      /* border: 1px solid green; */
+      height: 50px;
+      width: 50px;
+    }
+
+    .card img {
+      height: 50px;
+      width: 50px;
+      margin-left: 119px;
+    }
+
+    .navitems {
+      display: inline-block;
+      padding-left: 90px;
+      padding-right: 90px;
+      margin-top: 6px;
+      margin-bottom: 0px;
+    }
+
+    .navbars {
+      text-align: center;
+      background-color: rgb(0, 0, 0);
+      margin-top: 5px;
+      /* position: sticky;
+      bottom: 0;
+      z-index: 1; */
+      height: 52px;
+    }
+
+    .navbars a:hover {
+
+      color: grey;
+    }
+
+    .navbars a {
+      text-decoration: none;
+      font-size: 22px;
+
+      color: white;
+    }
+
+    .containerpostabout {
+      display: inline-flex;
+      /* border: 5px solid red; */
+      margin-left: 44px;
+      width: 1420px;
+      /* height: 2500px; */
+      margin-top:0px;
+    }
+
+    .samplepost {
+      /* border: 5px solid black; */
+      width: 1050px;
+      margin-right: 20px;
+      font-family: 'PT Serif', serif;
+      font-size: small;
+      background-color: white;
+      padding: 15px;
+
+    }
+
+    .samplepost h2 {
+      font-family: 'Abril Fatface', cursive;
+      font-size: 70px;
+    }
+
+    .samplepost p {
+      font-size: 17px;
+    }
+
+    .samplepost a {
+
+      color: blue;
+    }
+
+    .about {
+      /* border: 5px solid black; */
+      width: 350px;
+      height: 700px;
+      position: sticky;
+      top: 0;
+      font-family: 'PT Serif', serif;
+      font-weight: bold;
+      font-size: medium;
+      text-align: left;
+      background-color: white;
+      padding: 15px;
+
+
+    }
+
+    footer {
+      background-color:  rgb(52, 58, 64);
+      color: white;
+      text-align: center;
+      height: 70px;
+      justify-content: center;
+      align-items: center;
+      /* border: 3px solid black; */
+      align-content: center;
+      /* font-size: 30px; */
+      margin-top: 5px;
+      padding-top: 6px;
+      width: 1514px;
+    }
+
+    footer p{
+      font-size: 24px;
+    }
+    
+    footer a{
+      text-decoration: none;
+      color: white;
+    }
+    footer a:hover{
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .cardimg {
+      display: inline;
+      height: 245px;
+      width: 200px;
+      border: 2px solid red;
+      margin-left: 500px;
+      /* border-radius: 20px;
+      margin-bottom: 50px; */
+    }
+
+    /* .cardimg img{
+      
+      height: 225px;
+      width: 190px;
+      margin-left: 0%;
+    } */
+    .techno {
+      border: 2px solid blue;
+
+      margin-top: 0%;
+      width: 350px;
+      height: 250px;
+    }
+    /* .hide {
+  display: none;
+  
+}
+.mydiv:hover + .hide {
+  display: block;
+  color: red;
+  
+} */
+.containe{
+  background-color: white;
+  margin-left: 44px;
+  margin-top: 8px;
+  width: 1420px;
+  /* height: 250px; */
+  margin-bottom: 3px;
+  
+}
+#facebook{
+  background-color: white;
+  width: 1050px;
+  margin-left: 44px;
+  padding-left: 15px;
+}
+.iconi{
+  margin-left: 696px;
+}
+.fab{
+  margin:5px;
+}
+.iconi a{
+  text-decoration: none;
+  color: orangered;
+}
+.iconi a:hover{
+  color: black;
+}
+.mainheading{
+  color: black;
+  /* background-color: white;
+  background-size: 44ch; */
+  /* text-decoration: underline; */
+  /* text-decoration-color:; */
+}
+    
+  </style>
+</head>
+
+<body>
+  {% load static%}
+  <div>
+    <div class="conta">
+
+      <div id="logo"><img src="{%static  'blog/blogo.webp' %}" alt=""></div>
+      <h1 id="heading">Blogtech</h1>
+    </div>
+    <nav class="navbars">
+      
+      <ul>
+        <li class="navitems"><a href="">Home</a></li>
+        <li class="navitems"><a href="contact">Contact Us</a></li>
+        <li class="navitems"><a href=" ">Contents</a></li>
+        
+        
+        <li class="navitems"><a href=" ">Join Free</a></li>
+      </ul>
+      <!-- <div class="mydiv">Contact Us</div> -->
+      
+      
+    </nav>
+    <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Bottom popover">contents</button> -->
+    <div class="corosal mt-2">
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{%static 'blog/unsplash1resized.jpg' %}"
+            crossorigin="anonymous">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="mainheading">Technology Blogs</h2>
+              <h5 class="mainheading">Get Latest Technology Related blogs On Blogtech.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'blog/sciencere.jpg' %}" crossorigin="anonymous">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Science Blogs</h2>
+              <h5>Get Latest Science Stuff Related blogs On Blogtech.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="spaceimage" src="{%static 'blog/educationunsplashresize.jpg' %}"
+            crossorigin="anonymous">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Educational Blogs</h2>
+              <h5>Get Latest Education Related blogs On Blogtech.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+  
+  <!-- <div class="blogcard">
+    <div class="card" >
+      {% load static %}
+      <div class="techno">Technology <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam suscipit dignissimos dolores, molestiae a eaque repellat rerum quis. Libero fugiat, dolorem ut dolores ullam voluptatibus nesciunt dolor vero harum eos!</div>   
+      <div class="cardimg">
+        {% load static %}
+        <img src="{%static 'blog/50x50.png' %}" alt="">
+        
+      </div>
+      
+    </div> 
+    <div class="card" >
+      science
+    </div>
+  </div> -->
+  <div class="containe">
+  <div class="row mb-0" >
+    
+    {% for item in myposts %}
+    
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">{{item.genre}}</strong>
+            <h3 class="mb-0">{{item.tilte}}</h3>
+            <div class="mb-1 text-muted">{{item.pub_date}}</div>
+            <p class="card-text mb-auto">{{item.subtitle}}</p>
+            <a href="blogpost/{{item.newpost_id}}" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <!-- {% load static%} -->
+            <img src="/media/{{item.thumbnail}}" class="bd-placeholder-img" width="200" height="250"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+            <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    {% if forloop.counter|divisibleby:2 %}
+  </div>
+  </div>
+  <div class="containe">
+
+    <div class="row mb-2">
+      
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+<!-- </div> -->
+  
+  <div class="containerpostabout">
+    
+    <div class="samplepost">
+      <h1>From the Blogtech</h1>
+      <hr>
+      <h2>{{mainpost.maintitle1}}</h2>
+      <p>{{mainpost.pub_date}} by  <a href="https://www.instagram.com/amolmohadikar/" target="_blank">{{mainpost.made_by}}</a></p>
+      <img src="/media/{{mainpost.thumbnail}}" class="img-fluid" alt="...">
+      <br>
+      <br>
+      <p>{{mainpost.paragraph1}}</p>
+      <!-- rounded mx-auto d-block -->
+      <h3>{{mainpost.maintitle2}}</h3><br>
+      <img src="/media/{{mainpost.thumbnail2}}" class="img-fluid" alt="..."><br><br>
+      <P>{{mainpost.paragraph2}}</P><br>
+      <h3>{{mainpost.maintitle3}}</h3><br>
+      <img src="/media/{{mainpost.thumbnail3}}" class="img-fluid" alt="..."><br><br>
+        <p>{{mainpost.paragraph3}}</p>
+        <hr>
+      </div>
+        <div class="about">
+        <h1>About</h1>
+        <p> Hey Readers! Welcome to Blogtech This Technology blog is a sample blog of blogtech for more such Awesome blogs click on continue reading.
+          If you love the blog Please like , Comment and Share. Continue reading options are on preview posts before this sample post.
+          <br>
+          <hr>
+          <br>
+          <h4 class="fst-italic">Contact blogger on</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/amolmohadikar/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amol.mohadikar.1"  target="_blank">Facebook</a></li><br><hr>
+                </ol>
+
+        </p>
+        </div>
+        
+        
+      </div>
+      <div  id="facebook"><br>
+        <div class="fb-like" data-href="http://127.0.0.1:8000/blogpost/{{post.post_id}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div><br>
+    <div class="fb-comments" data-href="http://127.0.0.1:8000/blogpost/{{post.post_id}}" data-width="" data-numposts="5"></div>
+      </div>
+      <br>
+      <div class="iconi">
+      <a href="https://www.facebook.com/amol.mohadikar.1"  target="_blank">
+
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/amolmohadikar/"  target="_blank">
+
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="#" target="_blank">
+
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      </div>
+      
+      <footer>
+        
+        
+        © 2020-2021 Blogtech.com 
+        
+        <br>
+        <a href="">Back to top</a> | <a href="">Privacy</a> | <a href="">Terms</a>
+      </footer>
+        
+        
+      </div>
+    </div>
+    
+  </div>
+  <script src="https://kit.fontawesome.com/f9c21bf15d.js" crossorigin="anonymous"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="aNvxdf2U"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  </body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<style>
+    {% block css %} {% endblock %}
+    footer {
+      background-color:  rgb(52, 58, 64);
+      color: white;
+      text-align: center;
+      height: 70px;
+      justify-content: center;
+      align-items: center;
+      /* border: 3px solid black; */
+      align-content: center;
+      /* font-size: 30px; */
+      margin-top: 5px;
+      padding-top: 6px;
+    }
+
+    footer p{
+      font-size: 24px;
+    }
+    
+    footer a{
+      text-decoration: none;
+      color: white;
+    }
+    footer a:hover{
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .conta {
+
+display: block;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+text-align: center;
+background-color: rgb(240, 108, 108);
+margin-top: 0px;
+/* position: sticky;
+top: 0; */
+z-index: 1;
+align-content: center;
+align-items: center;
+box-sizing: border-box;
+padding-bottom: 0px;
+
+
+}
+
+.conta h1 {
+
+/* border: 2px solid red; */
+display: inline-flex;
+height: 60px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+animation: typing 1s steps(8);
+overflow: hidden;
+word-wrap: none;
+border-right: 4px solid black;
+width: 8ch;
+padding-top: 00px;
+color: white;
+}
+
+@keyframes typing {
+0% {
+  width: 0ch;
+}
+
+100% {
+  width: 8ch;
+
+}
+}
+
+.conta img {
+/* border: 2px solid red; */
+/* display: inline-flex; */
+height: 83px;
+width: 50px;
+display: inline-block;
+filter: invert(1);
+margin-top: 0px;
+padding-bottom: 42px;
+
+
+}
+
+#heading {
+text-align: center;
+display: inline-block;
+}
+
+#logo{
+      display: inline-block;
+      /* border: 1px solid green; */
+      height: 50px;
+      width: 50px;
+}
+
+.navitems {
+      display: inline-block;
+      padding-left: 90px;
+      padding-right: 90px;
+      margin-top: 6px;
+      margin-bottom: 0px;
+      
+    }
+
+    .navbars {
+      text-align: center;
+      background-color: black;
+      margin-top: 5px;
+      /* position: sticky;
+      top: 0; */
+      /* z-index: 1; */
+      height: 52px;
+    }
+
+    .navbars a:hover {
+
+      color: grey;
+    }
+
+    .navbars a {
+      text-decoration: none;
+      font-size: 22px;
+
+      color: white;
+    }
+       #facebook{
+  background-color: white;
+  width: 1050px;
+  margin-left: 44px;
+  padding-left: 15px;
+}
+.iconi{
+  margin-left: 696px;
+}
+.fab{
+  margin:5px;
+}
+.iconi a{
+  text-decoration: none;
+  color: orangered;
+}
+.iconi a:hover{
+  color: black;
+}
+    
+
+</style>
+<body>
+    {% load static %}
+    <div class="conta">
+
+        <div id="logo"><img src="{%static  'blog/blogo.webp' %}" alt=""></div>
+        <h1 id="heading">Blogtech</h1>
+      </div>
+      <nav class="navbars">
+
+        <ul>
+          <li class="navitems"><a href="/">Home</a></li>
+          <li class="navitems"><a href="/contact">Contact Us</a></li>
+          <li class="navitems"><a href="/contact">Contents</a></li>
+          <li class="navitems"><a href="/contact">Join Free</a></li>
+        </ul>
+  
+      </nav>
+     <div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Info :</strong> Please enter your details to send a contact message and fill all the fields given below otherwise the form will not be submitted.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+      <div class="container">
+
+          {% block body %}{% endblock %}
+        </div>
+         
+      <div class="iconi">
+      <a href="https://www.facebook.com/amol.mohadikar.1"  target="_blank">
+
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/amolmohadikar/"  target="_blank">
+
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="#" target="_blank">
+
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      </div>
+    <footer>
+      
+      
+        © 2020-2021 Blogtech.com 
+        
+        <br>
+        <a href="">Back to top</a> | <a href="">Privacy</a> | <a href="">Terms</a>
+      </footer>
+
+      <script src="https://kit.fontawesome.com/f9c21bf15d.js" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="aNvxdf2U"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
