@@ -5,7 +5,7 @@ from .models import Mainblogpost
 from .models import Message
 import json
 import requests
-from PIL import Image
+
 
 # Create your views here.
 
